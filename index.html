@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nash's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Canvas -->
+    <canvas id="animated-bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" data-aos="fade-down" data-aos-duration="1000">
+        <div class="logo">My Portfolio</div>
+        <div class="nav-links" id="nav-links">
+            <a href="#projects" class="nav-link">Work</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">YOUR<br>CREATIVE DEVELOPER</h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">I craft digital experiences that blend aesthetics with functionality, turning ideas into interactive realities.</p>
+        <a href="#projects" class="cta-button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">View My Work</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Featured Projects</h2>
+        
+        <!-- Loading State -->
+        <div class="loading-state" id="loading-state">
+            <div class="spinner"></div>
+            <p>Loading repositories from GitHub...</p>
+        </div>
+        
+        <!-- Error State -->
+        <div class="error-state" id="error-state" style="display: none;">
+            <p>Unable to load repositories. Showing featured projects instead.</p>
+        </div>
+        
+        <div class="projects-grid" id="projects-grid">
+            <!-- Dynamic GitHub repositories will be loaded here -->
+            <!-- Fallback projects in case GitHub API fails -->
+            <div class="project-card fallback-project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" style="display: none;">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="TO-DO-LIST" class="project-img">
+                <div class="project-overlay">
+                    <h3>TO-DO-LIST</h3>
+                    <p>A simple and elegant todo list application</p>
+                    <div class="project-language">JavaScript</div>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 0</span>
+                        <span><i class="fas fa-code-branch"></i> 0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fallback-project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" style="display: none;">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Weather App" class="project-img">
+                <div class="project-overlay">
+                    <h3>Weather App</h3>
+                    <p>Real-time weather application with location-based forecasting</p>
+                    <div class="project-language">JavaScript</div>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 0</span>
+                        <span><i class="fas fa-code-branch"></i> 0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fallback-project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" style="display: none;">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="FluidCloud Card" class="project-img">
+                <div class="project-overlay">
+                    <h3>FluidCloud Card</h3>
+                    <p>Modern CSS card component with fluid animations</p>
+                    <div class="project-language">CSS</div>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 0</span>
+                        <span><i class="fas fa-code-branch"></i> 0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content" data-aos="fade-right" data-aos-duration="1000">
+            <h2>About Me</h2>
+            <p>I am passionate about creating and bringing ideas to life, with hands-on experience in 3D modeling and game development on the Roblox platform. Skilled in building basic games, I have a solid understanding of 3D modeling fundamentals and enjoy experimenting with creative design.As a game tester for Driving Empire, developed by Voldex, I’ve honed my attention to detail, ensuring top-quality user experiences in one of Roblox's popular games. Alongside my game development journey, I also have a knack for video editing, helping me express creativity across different media.</p>
+            <p>Beyond the virtual world, I enjoy playing guitar and sketching figures, allowing me to channel my artistic side in various ways.
+I am always open to new opportunities, collaborations, and creative challenges, so feel free to connect!</p>
+            
+            <div class="skills">
+                <span class="skill-tag" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">Java</span>
+                <span class="skill-tag" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">React</span>
+                <span class="skill-tag" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Node.js</span>
+                <span class="skill-tag" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">Python</span>
+                <span class="skill-tag" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">UI/UX Design</span>
+                <span class="skill-tag" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">Css</span>
+                <span class="skill-tag" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">Adobe</span>
+                <span class="skill-tag" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">C</span>
+            </div>
+        </div>
+        <div class="about-image" data-aos="fade-left" data-aos-duration="1000">
+            <img src="nash-photo.jpg" alt="Nash D'Souza">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Get In Touch</h2>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+        <a href="mailto:itsnashhh06@gmail.com" class="cta-button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Email Me!</a>
+        
+        <div class="social-links" data-aos="fade-up" data-aos-duration="800">
+            <a href="https://www.linkedin.com/in/nash-d-souza-a0ba4a333/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/nash.x0x/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="http://wa.me/919930064979" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/darko-mode" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up" data-aos-duration="1000">
+        <p>© 2025 Made by Nash 💖. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
