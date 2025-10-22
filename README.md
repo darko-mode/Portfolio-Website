@@ -8,7 +8,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/darko-mode)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/nash-d-souza-a0ba4a333/)
 
-![Portfolio Preview](https://via.placeholder.com/800x400/3c09a7/ffffff?text=Portfolio+Preview)
+![App Screenshot](./Preview.jpg)
 
 </div>
 
